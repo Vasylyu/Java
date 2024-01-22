@@ -3,12 +3,12 @@
  */
 
 public class program {
-public static void main(string[] args) {
+public static void main(String[] args) {
     var s = System.currentTimeMillis();
 
 
    StringBuilder sb = new StringBuilder();
-   for (i = 0; i < 1000; i++) {
+   for (int i = 0; i < 100000000; i++) {
         sb.append("+");
     }
     System.out.println(System.currentTimeMillis() - s);
