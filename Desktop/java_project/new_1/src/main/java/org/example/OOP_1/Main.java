@@ -23,11 +23,22 @@ public class Main {
         machine.addBottleofWatter(new BottleWater("Вода2", 10, 0.5));
         machine.addBottleofWatter(new BottleWater("Вода3", 1, 1));
         machine.addBottleofWatter(new BottleWater("Вода4", 1000, 500));
-        System.out.println("machine = " + machine);
-        machine.getProduct("Вода1");
+
+        HotDrinkVendingMacine cofe = new HotDrinkVendingMacine();
+        cofe.addHotDrink(new HotDrink("чай", 24, 0.5, 86));
+        cofe.addHotDrink(new HotDrink("кофе", 34, 0.5, 89));
+        cofe.addHotDrink(new HotDrink("водка", 64, 0.5, 100));
+
+        System.out.println(cofe.getProduct("кофе"));
+        System.out.println(cofe.getProduct("водка"));
+
+        System.out.println(machine.getProduct("Вода2"));
         printGetProduct(machine);
     }
-    public static void printGetProduct(VendingMachine vendingMachine){
-        System.out.println(vendingMachine.getProduct("dvvdvfd"));
+
+    public static void printGetProduct(VendingMachine vendingMachine) {
+        System.out.println(vendingMachine.getProduct("Вода4"));
+
     }
+
 }

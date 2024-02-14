@@ -17,6 +17,7 @@ public class BottleofWaterVendingMasineWater implements VendingMachine {
 
     }
 
+
     @Override
     public Product getProduct(String name) {
         for (Product i : productlist) {
@@ -25,5 +26,6 @@ public class BottleofWaterVendingMasineWater implements VendingMachine {
         }
         return null;
     }
-}
 
+
+}
