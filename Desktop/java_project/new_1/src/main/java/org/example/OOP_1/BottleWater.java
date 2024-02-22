@@ -15,17 +15,17 @@ public class BottleWater extends Product {
     }
 
 
+    public BottleWater(String name, int cost, double volume) {
+        super(name, cost);
+        this.volume = volume;
+
+    }
+
     @Override
     public String toString() {
         return "BottleWater{" +
                 "volume=" + volume +
                 '}';
-    }
-
-    public BottleWater(String name, int cost, double volume) {
-        super(name, cost);
-        this.volume = volume;
-
     }
 }
 
