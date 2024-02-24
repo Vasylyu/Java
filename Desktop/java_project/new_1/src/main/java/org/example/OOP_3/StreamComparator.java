@@ -1,7 +1,5 @@
 package org.example.OOP_3;
 
-import org.example.lesson_oop3.StudentGroup;
-
 import java.util.Comparator;
 
 public class StreamComparator implements Comparator<StudentGroup> {

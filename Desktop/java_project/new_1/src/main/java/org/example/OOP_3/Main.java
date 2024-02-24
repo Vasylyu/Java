@@ -7,19 +7,21 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Student> studentList111 = Arrays.asList(
-                new Student(4, "aab", "aab", "aab"),
-                new Student(2, "aaa", "aaa", "aaa"),
-                new Student(3, "Aaa", "Aaa", "Aaa"),
-                new Student(1, "bbb", "bbb", "bbb"));
-        List<Student> studentList222 = Arrays.asList(
-                new Student(4, "aab", "aab", "aab"),
-                new Student(2, "aaa", "aaa", "aaa"));
+                new Student(4, "Алексей", "Иванов", "Сергеевич"),
+                new Student(2, "Иван", "Петров", "Иванович"),
+                new Student(3, "Ольга", "Петрова", "Aндреевна"),
+                new Student(1, "Вечеслав", "Семенов", "Алексеевич"));
+                List < Student > studentList222 = Arrays.asList(
+                        new Student(4, "Марина", "Киарова", "Олеговна"),
+                        new Student(2, "Елена", "Пушкина", "Сергеевна"),
+                        new Student(2, "Светлана", "Жорова", "Максимова"));
         List<Student> studentList333 = Arrays.asList(
-                new Student(4, "aab", "aab", "aab"));
+                new Student(4, "Aak", "Frost", "Gis"),
+                new Student(4, "Cat", "Fire", "Yand"));
 
-        StudentGroup studentGroup1 = new StudentGroup(studentList111, 111);
-        StudentGroup studentGroup2 = new StudentGroup(studentList222, 222);
-        StudentGroup studentGroup3 = new StudentGroup(studentList333, 333);
+        StudentGroup studentGroup1 = new StudentGroup(studentList111, 67);
+        StudentGroup studentGroup2 = new StudentGroup(studentList222, 76);
+        StudentGroup studentGroup3 = new StudentGroup(studentList333, 54);
 
 
         List<StudentGroup> studentGroupList = new ArrayList<>();

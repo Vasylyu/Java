@@ -1,6 +1,5 @@
 package org.example.OOP_3;
 
-import org.example.lesson_oop3.StudentGroup;
 
 import java.util.Iterator;
 import java.util.List;
