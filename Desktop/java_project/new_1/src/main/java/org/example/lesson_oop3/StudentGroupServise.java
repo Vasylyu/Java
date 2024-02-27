@@ -26,7 +26,7 @@ public class StudentGroupServise {
 
     public List<Student> getSortedStudentGroupByFio() {
         List<Student> studentList = new ArrayList<>(studentGroup.studentList);
-        studentList.sort(new StudentComparator());
+        studentList.sort(new UserComparator<Student>());
         return studentList;
     }
 }
