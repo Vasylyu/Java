@@ -1,9 +1,6 @@
 package org.example.service;
 
-import org.example.model.Student;
-import org.example.model.Teacher;
-import org.example.model.Type;
-import org.example.model.User;
+import org.example.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,10 +12,10 @@ public class DataService {
 
     public void create(String firstName, String secondName, String lastName, Integer yearOfBirth, Type type) {
         int id = getFreeId(type);
-        if (type == Type.STUDENT) {
-            users.add(new Student(id, firstName, secondName, lastName, yearOfBirth));
-        } else if (type == Type.TEACHER) {
+        if (type == Type.TEACHER) {
             users.add(new Teacher(id, firstName, secondName, lastName, yearOfBirth));
+        } else if (type == Type.STUDENT) {
+            users.add(new Student(id, firstName, secondName, lastName, yearOfBirth));
 
         }
     }
@@ -49,5 +46,22 @@ public class DataService {
         }
         return studentList;
     }
+    public List<Teacher> getTeacherList() {
+        List<Teacher> teacherList = new ArrayList<>();
+        for (User user : users) {
+            if (user instanceof Teacher) {
+                teacherList.add((Teacher) user);
+            }
+        }
+        return teacherList;
+    }
+    public List<LessonGroup> getGroupList() {
+        List<LessonGroup> groupList = new ArrayList<>();
+        for (User user : users) {
+            groupList.add(new LessonGroup(5,"Anna",45));
+        }
+        return groupList;
+    }
+
 }
 

@@ -39,10 +39,17 @@ public class Main {
         Controller controller = new Controller();
         controller.createStudent("Vasilii", "Ivanovich", "Crigorev", 1989);
         controller.createStudent("Ivan", "Ivanovich", "Crigorev", 1988);
-        controller.printAllStudents();
-        System.out.println("-------------------------------------------------------------------------------");
         controller.createStudent("Lida", "Ivanovich", "Crigorev", 1986);
         controller.createStudent("Olesy", "Ivanovich", "Crigorev", 1983);
         controller.printAllStudents();
+
+        System.out.println("--------------------------------------------------------------------------------------");
+        controller.createTeacher("Anna","Sergeevna","Mirasova",1969);
+        controller.createTeacher("Svetlana","Olegovna","Kyznecova",1972);
+        controller.printTeachers();
+        System.out.println("----------------------------------------------------------------------------------------");
+        controller.createGroup(5,"Anna",45);
+        controller.printGroup();
     }
+
 }
