@@ -1,6 +1,6 @@
 package org.oop_5.model;
 
-import org.example.controller.Controller;
+import org.oop_5.controller.Controller;
 
 /**
  Урок 5. От простого к практике

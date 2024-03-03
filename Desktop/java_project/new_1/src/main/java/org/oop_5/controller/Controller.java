@@ -1,12 +1,12 @@
 package org.oop_5.controller;
 
-import org.example.model.LessonGroup;
-import org.example.model.Student;
-import org.example.model.Teacher;
-import org.example.model.Type;
-import org.example.service.DataService;
-import org.example.service.LessonGroupService;
-import org.example.view.StudentView;
+import org.oop_5.model.LessonGroup;
+import org.oop_5.model.Student;
+import org.oop_5.model.Teacher;
+import org.oop_5.model.Type;
+import org.oop_5.service.DataService;
+import org.oop_5.service.LessonGroupService;
+import org.oop_5.view.StudentView;
 
 public class Controller {
     private final DataService service = new DataService();

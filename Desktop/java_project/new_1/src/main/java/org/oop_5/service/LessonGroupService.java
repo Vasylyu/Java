@@ -1,8 +1,8 @@
 package org.oop_5.service;
 
-import org.example.model.Teacher;
-import org.example.model.Type;
-import org.example.model.User;
+import org.oop_5.model.Teacher;
+import org.oop_5.model.Type;
+import org.oop_5.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

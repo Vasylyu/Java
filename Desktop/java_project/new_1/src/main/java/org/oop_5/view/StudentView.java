@@ -1,8 +1,8 @@
 package org.oop_5.view;
 
-import org.example.model.LessonGroup;
-import org.example.model.Student;
-import org.example.model.Teacher;
+import org.oop_5.model.LessonGroup;
+import org.oop_5.model.Student;
+import org.oop_5.model.Teacher;
 
 public class StudentView {
     public void printOnConsole(Student student){

@@ -1,6 +1,6 @@
 package org.oop_5.service;
 
-import org.example.model.*;
+import org.oop_5.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
