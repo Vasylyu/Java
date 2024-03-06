@@ -3,15 +3,15 @@ package org.example.lesson_oop3;
 import java.util.Iterator;
 import java.util.List;
 
-public class TeacherList implements Iterable<TeacherServise> {
-    public List<TeacherServise> teacherList;
+public class TeacherList implements Iterable<Teacher> {
+    public List<Teacher> teacherList;
 
-    public TeacherList(List<TeacherServise> teacherList) {
+    public TeacherList(List<Teacher> teacherList) {
         this.teacherList = teacherList;
     }
 
     @Override
-    public Iterator<TeacherServise> iterator() {
+    public Iterator<Teacher> iterator() {
         return null;
     }
 }

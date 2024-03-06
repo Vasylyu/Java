@@ -1,6 +1,11 @@
 package org.example.lesson_oop3;
 
-public class Student extends User implements Comparable<Student> {
+public  class Student extends User implements Comparable<Student> {
+
+
+    //(Single Responsibility Principle — SRP):
+    // Данный класс Студент отвечает только за студентов и ничего больше,
+    // для других задач у нас есть, например, класс Учитель, отвечающий за учителей.
     public Long studentId;
 
 
@@ -25,6 +30,6 @@ public class Student extends User implements Comparable<Student> {
         else if (this.studentId < o.studentId)
             return -1;
         else return 0;
-        // return this.studentId.compareTo(o.studentId);
+
     }
 }

@@ -1,6 +1,10 @@
 package org.example.lesson_oop3;
 
-public class User {
+public abstract class User {
+
+    //(Dependency Inversion Principle — DIP):
+    // Класс Студент и класс Учитель наследуются от абстрактного класса user,
+    // поэтому эти классы зависят от абстракции и легко могут быть изменены.
     public String getFirstName() {
         return firstName;
     }
@@ -26,6 +30,10 @@ public class User {
     }
 
     private String firstName;
+    // (Open/Closed Principle — OCP):
+    // Класс user открыт для расширения,
+    // можем добавить год рождения, например,
+    // и закрыт для изменений так как строки имени фамилии и отчества приватны.
     private String secondName;
     private String lastName;
 
