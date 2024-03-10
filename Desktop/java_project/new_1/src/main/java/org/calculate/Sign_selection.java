@@ -22,10 +22,15 @@ public class Sign_selection extends View {
                 result = num1 * num2;
                 break;
             case "/":
-                result = num1 / num2;
+                try {
+                    result = num1 / num2;
+                } catch (ArithmeticException e) {
+                    System.out.println("деление на ноль");
+                }
+
                 break;
             default:
-                System.out.printf("Error! Enter correct operator");
+                System.out.printf("ошибка! введите корректный знак ");
 
         }
         return result;

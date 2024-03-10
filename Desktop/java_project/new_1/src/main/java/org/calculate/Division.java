@@ -8,11 +8,11 @@ public class Division extends View {
     }
 
     public int getResult() {
-        div = num1 / num2;
-        if (num2 == 0)
-            return -1;
-         else {
 
+        try {
+            div = num1 / num2;
+        } catch (ArithmeticException e) {
+            System.out.println("деление на ноль");
         }
         return div;
     }

@@ -10,13 +10,15 @@ public class DivisionByZero {
         int a = reader.nextInt();
         System.out.println("enter number 2: ");
         int b = reader.nextInt();
-        int c;
-        c = a / b;
-        if (a == 0 || b == 0) {
+        int c = 0;
+        try {
+            c = a / b;
+        } catch (ArithmeticException e) {
             System.out.println("division by zero");
-        } else {
-            System.out.println("Равно");
-            System.out.println(c);
+
         }
+        System.out.println(c);
     }
+
 }
+
